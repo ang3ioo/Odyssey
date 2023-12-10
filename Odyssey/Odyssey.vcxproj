@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <ProjectGuid>{3D589711-02F0-4A85-9156-3DB064B2F3AB}</ProjectGuid>
+    <EnableManagedPackageReferenceSupport>true</EnableManagedPackageReferenceSupport>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <Keyword>ManagedCProj</Keyword>
+    <RootNamespace>Odyssey</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CLRSupport>true</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CLRSupport>true</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CLRSupport>true</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CLRSupport>true</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies />
+      <SubSystem>Windows</SubSystem>
+      <AdditionalOptions>/ENTRY:"mainCRTStartup" %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies />
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies />
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies />
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AboutForm.cpp" />
+    <ClCompile Include="AgeForm.cpp" />
+    <ClCompile Include="figurineForm.cpp" />
+    <ClCompile Include="HomeForm.cpp" />
+    <ClCompile Include="Intro1Form.cpp" />
+    <ClCompile Include="IntroForm.cpp" />
+    <ClCompile Include="LeftForm.cpp" />
+    <ClCompile Include="LoadingForm.cpp" />
+    <ClCompile Include="NameForm.cpp" />
+    <ClCompile Include="NorthForm.cpp" />
+    <ClCompile Include="PoliceStationForm.cpp" />
+    <ClCompile Include="PSAdmin2Form.cpp" />
+    <ClCompile Include="PSAdminForm.cpp" />
+    <ClCompile Include="PSAdminNLForm.cpp" />
+    <ClCompile Include="PSBackOfficeForm.cpp" />
+    <ClCompile Include="PSCafeteriaForm.cpp" />
+    <ClCompile Include="PSEmergencyForm.cpp" />
+    <ClCompile Include="PSKeyForm.cpp" />
+    <ClCompile Include="PSLeaveForm.cpp" />
+    <ClCompile Include="PSLookForm.cpp" />
+    <ClCompile Include="PSNoEmergencyForm.cpp" />
+    <ClCompile Include="PSPhoneForm.cpp" />
+    <ClCompile Include="PSPovForm.cpp" />
+    <ClCompile Include="PSSafeForm.cpp" />
+    <ClCompile Include="PSYesCrowForm.cpp" />
+    <ClCompile Include="RightForm.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AboutForm.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="AgeForm.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="figurineForm.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="HomeForm.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="Intro1Form.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="IntroForm.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="LeftForm.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="LoadingForm.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="NameForm.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="NorthForm.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="PoliceStationForm.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="PSAdmin2Form.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="PSAdminForm.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="PSAdminNLForm.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="PSBackOfficeForm.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="PSCafeteriaForm.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="PSEmergencyForm.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="PSKeyForm.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="PSLeaveForm.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="PSLookForm.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="PSNoEmergencyForm.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="PSPhoneForm.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="PSPovForm.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="PSSafeForm.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="PSYesCrowForm.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="RightForm.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AboutForm.resx">
+      <DependentUpon>AboutForm.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AgeForm.resx">
+      <DependentUpon>AgeForm.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="figurineForm.resx">
+      <DependentUpon>figurineForm.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HomeForm.resx">
+      <DependentUpon>HomeForm.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Intro1Form.resx">
+      <DependentUpon>Intro1Form.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IntroForm.resx">
+      <DependentUpon>IntroForm.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LeftForm.resx">
+      <DependentUpon>LeftForm.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoadingForm.resx">
+      <DependentUpon>LoadingForm.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NameForm.resx">
+      <DependentUpon>NameForm.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NorthForm.resx">
+      <DependentUpon>NorthForm.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PoliceStationForm.resx">
+      <DependentUpon>PoliceStationForm.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PSAdmin2Form.resx">
+      <DependentUpon>PSAdmin2Form.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PSAdminForm.resx">
+      <DependentUpon>PSAdminForm.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PSAdminNLForm.resx">
+      <DependentUpon>PSAdminNLForm.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PSBackOfficeForm.resx">
+      <DependentUpon>PSBackOfficeForm.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PSCafeteriaForm.resx">
+      <DependentUpon>PSCafeteriaForm.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PSEmergencyForm.resx">
+      <DependentUpon>PSEmergencyForm.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PSKeyForm.resx">
+      <DependentUpon>PSKeyForm.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PSLeaveForm.resx">
+      <DependentUpon>PSLeaveForm.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PSLookForm.resx">
+      <DependentUpon>PSLookForm.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PSNoEmergencyForm.resx">
+      <DependentUpon>PSNoEmergencyForm.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PSPhoneForm.resx">
+      <DependentUpon>PSPhoneForm.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PSPovForm.resx">
+      <DependentUpon>PSPovForm.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PSSafeForm.resx">
+      <DependentUpon>PSSafeForm.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PSYesCrowForm.resx">
+      <DependentUpon>PSYesCrowForm.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RightForm.resx">
+      <DependentUpon>RightForm.h</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
